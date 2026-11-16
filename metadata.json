@@ -1,0 +1,6 @@
+{
+  "name": "Vicini di Casa",
+  "description": "Prototipo wireframe interattivo ad alta leggibilità (WCAG AAA) in formato iPhone 17 Pro per mettere in contatto anziani e giovani vicini di casa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #E5E7EB;
+    color: #1A1A1A;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom thin wireframe scrollbar inside iPhone viewport */
+.wireframe-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.wireframe-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.wireframe-scroll::-webkit-scrollbar-thumb {
+  background: #BDBDBD;
+  border-radius: 9999px;
+}
+
+.wireframe-scroll::-webkit-scrollbar-thumb:hover {
+  background: #1A1A1A;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
